@@ -374,7 +374,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #0563bb;
+  color: goldenrod;
   line-height: 0;
 }
 .about .content p:last-child {
@@ -398,7 +398,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #0563bb;
+  background: #9a4ca4;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -449,7 +449,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #0563bb;
+  background-color: goldenrod;
 }
 
 /*--------------------------------------------------------------
@@ -474,7 +474,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: goldenrod;
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
@@ -1026,7 +1026,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: goldenrod;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
