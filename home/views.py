@@ -5,6 +5,10 @@ from .forms import ContactForm
 # Create your views here.
 def home(request):
     return render(request, 'index.html' , {})
+
+def fa(request):
+    return render(request, 'fa.html' , {})
+
 def contact(request):
        
 
