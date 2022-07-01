@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .forms import ContactForm
+from .forms import ContactForm 
 
 # Create your views here.
 def home(request):
@@ -21,4 +21,9 @@ def contact(request):
             return JsonResponse({
                 'msg': 'Success'
                 })
+
+
+
+
+
 
