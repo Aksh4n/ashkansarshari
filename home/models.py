@@ -14,3 +14,14 @@ class Contact(models.Model):
         return self.subject  
 
 
+class Order(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=200)
+    ticket = models.TextField(max_length=1000)
+
+
+
+    def __str__(self):
+
+        return self.email  
+

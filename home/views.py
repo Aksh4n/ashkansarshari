@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .forms import ContactForm 
+from .forms import ContactForm  , OrderForm
 
 # Create your views here.
 def home(request):
@@ -22,6 +22,19 @@ def contact(request):
                 'msg': 'Success'
                 })
 
+
+def order(request):
+       
+
+
+    if request.method == "POST":
+        form = OrderForm(request.POST)
+        if form.is_valid() :
+            form.save()
+                
+            return JsonResponse({
+                'msg': 'Success'
+                })
 
 
 

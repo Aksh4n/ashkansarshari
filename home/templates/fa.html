@@ -27,7 +27,7 @@
   <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{% static '' %}assets/css/style.css" rel="stylesheet">
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
 
 </head>
 
@@ -310,12 +310,12 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static '' %}assets/img/portfolio/enesweb.jpg" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/portfolio/enesweb.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="{% static '' %}assets/img/portfolio/enesweb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="{% static 'assets/img/portfolio/enesweb.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -538,6 +538,123 @@
       
     </section><!-- End Services Section -->
 
+            <!-- ======= Buy Ticket Section ======= -->
+            <section id="buy-tickets" class="section-with-bg">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="section-title">
+                  <h2>لیست قیمت</h2>
+                  <p> </p>
+                </div>
+        
+            
+                <div class="row">
+                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card mb-5 mb-lg-0">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted text-uppercase text-center">استاندارد </h5>
+                        <h6 class="card-price text-center">T.10'000'000 </h6>
+                        <hr>
+                        <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>هسته پشتیبان پایتون</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>دسترسی به پایگاه داده توسط پنل مدیریت</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>تجربه کاربری روان</li>
+                          <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>برنامه‌ها و ستون های دیتابیس متعدد  (فروشگاه‌ها/ تجارت الکترونیک/وبلاگ‌ها/...)</li>
+                          <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>محتوای پویا (قابل ویرایش توسط ادمین/خدمه/کاربران/...)</li>
+                          <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>تعامل سطح بالا توسط کاربر (بازی ها / معاملات زنده / محیط های اجتماعی / ...) </li>
+                        </ul>
+                        <hr>
+                        <div class="text-center">
+                          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">ثبت سفارش </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card mb-5 mb-lg-0">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted text-uppercase text-center">پرو</h5>
+                        <h6 class="card-price text-center">T.20'000'000</h6>
+                        <hr>
+                        <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>هسته پشتیبان پایتون</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>دسترسی به پایگاه داده توسط پنل مدیریت</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>تجربه کاربری روان</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>برنامه‌ها و ستون های دیتابیس متعدد  (فروشگاه‌ها/ تجارت الکترونیک/وبلاگ‌ها/...)</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>محتوای پویا (قابل ویرایش توسط ادمین/خدمه/کاربران/...)</li>
+                          <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>تعامل سطح بالا توسط کاربر (بازی ها / معاملات زنده / محیط های اجتماعی / ...)</li>
+                        </ul>
+                        <hr>
+                        <div class="text-center">
+                          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="pro-access">ثبت سفارش </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pro Tier -->
+                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted text-uppercase text-center">پرمیوم</h5>
+                        <h6 class="card-price text-center">T.40'000'000</h6>
+                        <hr>
+                        <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>هسته پشتیبان پایتون</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>دسترسی به پایگاه داده توسط پنل مدیریت</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>تجربه کاربری روان</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>برنامه‌ها و ستون های دیتابیس متعدد  (فروشگاه‌ها/ تجارت الکترونیک/وبلاگ‌ها/...)</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>محتوای پویا (قابل ویرایش توسط ادمین/خدمه/کاربران/...)</li>
+                          <li><span class="fa-li"><i class="fa fa-check"></i></span>تعامل سطح بالا توسط کاربر (بازی ها / معاملات زنده / محیط های اجتماعی / ...)</li>
+                        </ul>
+                        <hr>
+                        <div class="text-center">
+                          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="premium-access">ثبت سفارش </button>
+                        </div>
+        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+        
+              <!-- Modal Order Form -->
+              <div id="buy-ticket-modal" class="modal fade">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">یک وب اپ سفارش بده</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="POST" action="{% url 'order' %}" id="order-form">
+                        {% csrf_token %}
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group mt-3">
+                          <input type="text" class="form-control" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group mt-3">
+                          <select id="ticket-type" name="ticket" class="form-select">
+                            <option value="">-- انتخاب کنید --</option>
+                            <option value="standard-access">Standard WebApp</option>
+                            <option value="pro-access">Pro WebApp</option>
+                            <option value="premium-access">Premium WebApp</option>
+                          </select>
+                        </div>
+                        <div class="text-center mt-3">
+                          <button type="submit" class="btn">ثبت سفارش </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+            </section><!-- End Buy Ticket Section -->
+    
+
 
     <!-- ======= Contact Section ======= -->
     <section dir="ltr" id="contact" class="contact">
@@ -671,6 +788,28 @@
   }
   
   </script>
+  <script>
+    const form2 = document.getElementById('order-form');
+  form2.addEventListener("submit",submitHandler);
+  function submitHandler(e) {
+      var serializedData = $(this).serialize();
+      e.preventDefault();
+      $.ajax({
+          type: 'POST' , 
+          url : '{% url "order" %}',
+          data: serializedData  ,
+          dataType: 'json',
+          success: function (data) {
+              if (data.msg === 'Success') {
+                  alert('ممنون از انتخابتون و سفارش شما ثبت شد و به زودی از طریق ایمیل با شما تماس خواهم گرفت تا در مورد جنبه های مختلف پروژه صحبت کنیم');
+                  $("#order-form").trigger('reset');
+        }
+      }
+   })
+  }
+  
+  </script>
+  
   
   
 
