@@ -24,4 +24,9 @@ class Order(models.Model):
     def __str__(self):
 
         return self.email  
+class ViewCount(models.Model):
+    a = models.IntegerField(null=True)   
+    def __str__(self):
+
+        return str(self.a)      
 
