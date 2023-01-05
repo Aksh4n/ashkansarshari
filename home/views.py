@@ -7,12 +7,17 @@ from django.core.mail import send_mail
 
 # Create your views here.
 def home(request):
+    c = Category.objects.all()
+    p = Product.objects.all()
     count = ViewCount.objects.get(id=1).a + 1
     ViewCount.objects.update(a=count)
-    return render(request, 'index.html' , {})
+    return render(request, 'index.html' , {'c':c,'p':p})
 
 def fa(request):
-    return render(request, 'fa.html' , {})
+    c = Category.objects.all()
+    p = Product.objects.all()
+
+    return render(request, 'fa.html' , {'c':c,'p':p})
 
 def contact(request):
        
